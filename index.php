@@ -8,7 +8,7 @@
     <!-- Loading Bootstrap -->
     
     <link href="css/bootstrap.css" rel="stylesheet">
-    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!-- Edit CSS -->
     <link href="css/default.css" rel="stylesheet">
@@ -17,7 +17,7 @@
     
     
     <!-- Font Awesome -->
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- <link href="css/font-awesome.css" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,900,700,600,300,200" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -29,6 +29,28 @@
 
 <body>
     <div id="overlay" class="text-center" onclick="off()"></div>
+   
+    <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+    <!-- Modal content-->
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Header</h4>
+                </div>
+                <div class="modal-body">
+                   
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+
+    </div>
+    </div>
+    
+    
     <div id="page" class="page">
         <!-- ****** Team Section****** -->
         <section id="team3" class="team3">

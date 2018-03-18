@@ -27,8 +27,14 @@
 
         <!-- reviews -->
         <div>
-            <h5 id="show_reviews">
+            <h5 id="show_reviews" data-toggle="modal" data-target="#myModal">
                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Reviews</h5>
+               
+        </div>
+        <!-- package offered -->
+        <div>
+            <h5 id="show_package">
+                <i class="fa fa-get-pocket" aria-hidden="true"></i> Package Offered</h5>
                
         </div>
 

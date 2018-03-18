@@ -20,15 +20,15 @@
 #review_title{
     font-size: 1em;
     text-align:  left;
-    color: #7ef41ead;
+    color: #333;
     margin:  0;
 }
 
 #review_content{
-    color: white;
+    color: #191c33;
     text-transform:  initial;
     font-style:  italic;
-    margin-bottom: 17;
+    margin-bottom: -7px;
     text-align:  left;
 }
 #reviewer_name{
@@ -36,7 +36,6 @@
     font-size:  initial;
     color: #00a062c2;
     margin:  0;
-    margin-left: -23px;
 }
 
 #review_heading{font-size:  large;font-family: sans-serif;color:  white;font-weight:  700;}
@@ -48,10 +47,14 @@
     overflow: visible;
 }
 
-.blur-all {
+.blur {
     /* -webkit-filter: blur(1px); */
     -moz-filter: blur(10px);
     -o-filter: blur(10px);
     -ms-filter: blur(10px);
     filter: blur(5px);
+}
+
+hr.divider {
+	border-top: 3px double #8c8b8b;
 }

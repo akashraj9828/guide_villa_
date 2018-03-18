@@ -1,10 +1,7 @@
 $("#show_reviews").click(function(){
-    document.getElementById("overlay").style.display = "block";
-    $("div#page").addClass("blur-all")
-    var review_div=`<div id="reviews_container" ></div>`
-    var review_title = `<div>
-                        <span id="review_heading">Reviews</span>
-                        </div>`
+
+    $(".modal-title").html("Reviews")
+
     var review_template =`<div>
                                 <div>
                                  <!-- reviewer name -->
@@ -28,28 +25,49 @@ $("#show_reviews").click(function(){
                                     </div>
 
                                 </div>
-                            </div>`
+                            </div>
+                            <br>
+                            <hr class="divider">
+                            <br>`
+        $(".modal-body").append(review_template)
 
-    var close_btn =`<button type="button" class="btn btn-danger" onclick="off()" >Close</button>`
 
     
 
-    // $(review_div).append(review_title)
-    
-    $("div#overlay").append(review_div)
-    $("div#reviews_container").append(review_title)
-    $("div#reviews_container").append(review_template)
-    $("div#reviews_container").append(review_template)
 
-    $("div#reviews_container").append(close_btn)
    
-}
-)
+})
 
-function off() {
-    $("div#page").removeClass("blur-all")
+// $("#show_package").click(function () {
+//     document.getElementById("overlay").style.display = "block";
+//     $("div#page").addClass("blur")
+   
+//     var package_div = `<div id="packages_container" ></div>`
+//     var package_title = `<div>
+//                         <span id="package_heading">packages</span>
+//                         </div>`
+
+//     var close_btn = `<button type="button" class="btn btn-danger" onclick="off()" >Close</button>`
+
+
+   
+//     // $(package_div).append(package_title)
+
+//     $("div#overlay").append(package_div)
+//     $("div#packages_container").load("package_template.php")
+//     // $("div#packages_container").append(package_title)
+//     // $("div#packages_container").append(package_template)
+//     // $("div#packages_container").append(package_template)
+
+//     $("div#packages_container").append(close_btn)
+
+// }
+// )
+
+// function off() {
+//     $("div#page").removeClass("blur")
     
-    $("div#overlay").empty()
-    document.getElementById("overlay").style.display = "none";
-}
+//     $("div#overlay").empty()
+//     document.getElementById("overlay").style.display = "none";
+// }
 
