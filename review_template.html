@@ -1,0 +1,57 @@
+
+<script>
+
+    function createReview(reviewer,rating, review_title, review_content) {
+
+        var rating_div = "<div>"
+        for (i = 0; i < 5; i++) {
+            if (i < rating)
+                rating_div += '<span class="fa fa-star checked"></span>'
+            else
+                rating_div += '<span class="fa fa-star"></span>'
+        }
+        rating_div += "</div>"
+
+        var review_template = `<div>
+                                <div>
+                                 <!-- reviewer name -->
+                                    <div>
+                                        <p id="reviewer_name"><b>`+reviewer+`</b></p>
+                                    </div>
+                                    <!-- review title -->
+                                    <div>
+
+
+                                        <p id="review_title"><b>`+review_title+`</b></p>
+                                        `+rating_div+`
+                                    </div>
+
+
+                                    <!-- review content -->
+                                    <div>
+                                        <p id="review_content">
+                                            `+review_content+`
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <br>
+                            <hr class="divider">
+                            <br>`
+                            
+            return review_template
+    }
+
+    var div="<div id='review_holder'></div>"
+    var default_review_title=`Great service`
+    var default_review=`Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                        Good quality....Recommended.`
+
+    $(".modal-body").append(div)
+    $("#review_holder").append(createReview("akash raj",5,default_review_title,default_review))
+    $("#review_holder").append(createReview("dalai lama",4,default_review_title,default_review))
+    $("#review_holder").append(createReview("donald trump",1,default_review_title,default_review))
+
+</script>

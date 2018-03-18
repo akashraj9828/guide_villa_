@@ -22,6 +22,7 @@
     text-align:  left;
     color: #333;
     margin:  0;
+    text-transform:  capitalize;
 }
 
 #review_content{
@@ -34,6 +35,7 @@
 #reviewer_name{
     text-align:  left;
     font-size:  initial;
+    text-transform:  capitalize;
     color: #00a062c2;
     margin:  0;
 }

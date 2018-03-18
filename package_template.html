@@ -1,8 +1,8 @@
 <div class="pricing-table2-1">
     <div class="row">
-        <div id="package_holder">
 
-        </div>
+    <!-- unload all packages in here -->
+        <div id="package_holder"> </div>
 
     </div>
     <!-- /.row -->
@@ -12,7 +12,9 @@
 
 <script>
 function makePackage(destination,price) {
-    var temp=`<div class="col-md-6 col-sm-6 pricing-table-3">
+
+    //template holds the template for a Package offer
+    var template=`<div class="col-md-6 col-sm-6 pricing-table-3">
             <div class="ribbon popular"></div>
             <div class="plan">
 
@@ -56,7 +58,9 @@ function makePackage(destination,price) {
         </div>
         <!-- /.col -->`
 
-        return temp;
+
+        //returns template with information filler dynamically
+        return template;
 
 }
 

@@ -5845,38 +5845,38 @@ hr.shadowDown {
 
 /*	team 3
 /*----------------------------------------------------*/
-.team3{
+.guide{
     color: #fff;
     background: url(../images/header8.jpg) fixed  no-repeat center top;  
 }
 
-.team3 .section-padding{
+.guide .section-padding{
     padding: 50px 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.team3 .section-title h2{
+.guide .section-title h2{
     font-size: 35px;
     font-weight: 800;
 }
 
-.team3 .subtitle{
+.guide .subtitle{
     margin: 30px 0 50px 0;
     line-height: 1.7;
 }
 
-.team3 .box {
+.guide .box {
     margin-bottom: 15px;
     padding-top: 20px;
 }
 
-.team3 .box img {
+.guide .box img {
     border-radius: 10px;
     height: 200px;
 }
 
-.team3 .box img,
-.team3 .box span {
+.guide .box img,
+.guide .box span {
 	-webkit-transform: scale(0.7);
 	transform: scale(0.7);
 	-webkit-backface-visibility: hidden;
@@ -5885,35 +5885,35 @@ hr.shadowDown {
     transition: all 0.5s ease-in-out 0s;
 }
 
-.team3 .box:hover img,
-.team3 .box:hover span {
+.guide .box:hover img,
+.guide .box:hover span {
     border-radius: 50%;
 	-webkit-transform: scale(0.8);
 	transform: scale(0.8);
 }
 
-.team3 .box h3 {
+.guide .box h3 {
     font-family: 'Titillium Web', sans-serif;
 }
 
-.team3 .box strong {
+.guide .box strong {
     font-family: 'Roboto Slab', serif;
 }
 
-.team3 .box p {
+.guide .box p {
     font-size: 15px;
     margin-bottom: 20px;
     margin-top: 15px;
     padding: 0 10px;
 }
 
-.team3 .social-icon:hover{
+.guide .social-icon:hover{
     color: rgb(5, 216, 178);
 	-webkit-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
 
-.team3 .social-icon {
+.guide .social-icon {
     color: #fff;
     font-size: 16px !important;
     padding: 5px;
