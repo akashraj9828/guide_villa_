@@ -1,4 +1,4 @@
-</div> -->
+
 <script>
 
 function makeGuides(image,name,rating,location,about){
@@ -13,11 +13,17 @@ function makeGuides(image,name,rating,location,about){
     }
     rating_div+="</div>"
 
-
+    var special=""
+    if(rating>=5){
+        special+='<div class="ribbon five-stars"></div>'
+    }else{
+        special=""
+    }
     //template is the template for each Tour Guide
     var template=`<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+        
     <div class="box">
-
+        `+special+`
         <!-- image -->
         <div>
             <img src="images/`+image+`.png" alt="Guide Image">
@@ -64,7 +70,14 @@ var default_about="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
 
 //creating new Tour guides dynamically
 $("#guide_holder").append(makeGuides("member","akash",5,"delhi",default_about))
+$("#guide_holder").append(makeGuides("member3","kurtis",2,"mumbai",default_about))
 $("#guide_holder").append(makeGuides("member1","john",3,"kerela",default_about))
+$("#guide_holder").append(makeGuides("member","akash",5,"delhi",default_about))
 $("#guide_holder").append(makeGuides("member2","keiran",4,"rajasthan",default_about))
+$("#guide_holder").append(makeGuides("member1","john",3,"kerela",default_about))
+$("#guide_holder").append(makeGuides("member1","john",3,"kerela",default_about))
+$("#guide_holder").append(makeGuides("member","akash",5,"delhi",default_about))
+$("#guide_holder").append(makeGuides("member2","keiran",4,"rajasthan",default_about))
+$("#guide_holder").append(makeGuides("member","akash",5,"delhi",default_about))
 $("#guide_holder").append(makeGuides("member3","kurtis",2,"mumbai",default_about))
 </script>

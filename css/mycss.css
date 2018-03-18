@@ -2,20 +2,6 @@
     color: orange;
 }
 
-#overlay {
-    text-align:  center;
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #00000087;
-    z-index: 10;
-    filter:  blur;
-}
 
 #review_title{
     font-size: 1em;
@@ -40,32 +26,13 @@
     margin:  0;
 }
 
-#review_heading{font-size:  large;font-family: sans-serif;color:  white;font-weight:  700;}
-
-#reviews_container{
-    width: 50%;
-    margin: auto;
-    margin-top: 10%;
-    overflow: visible;
-}
-
-.blur {
-    /* -webkit-filter: blur(1px); */
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);
-    filter: blur(5px);
-}
+#
 
 hr.divider {
 	border-top: 3px double #8c8b8b;
 }
 
-@media only screen and (min-width: 992px){
-.pricing-table2-1 .plan header {
-    background: url("../images/destination/rajasthan.jpg") no-repeat  center 0px / cover;
-}
-}
+
 
 #guide_name{text-transform:  capitalize;}
 #guide_location{text-transform:  capitalize;}
@@ -73,3 +40,218 @@ hr.divider {
 #guide_about{
 
 }
+
+
+/*	pricing 2-1
+/*----------------------------------------------------*/
+.pricing-table2-1{
+    padding: 50px 0;
+}
+
+.pricing-table2-1 .section-title{
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 35px;
+}
+
+.pricing-table2-1 .plan header {
+	background: #01BF86;
+	text-align: center;
+	padding: 50px;
+}
+
+.pricing-table2-1 .plan h2 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.pricing-table2-1 .plan .btn {
+    background-color: #191c33;
+    border: medium none;
+    font-size: 13px;
+    margin-top: 20px;
+    min-width: 150px;
+    padding: 12px 0;
+    text-transform: uppercase;
+}
+
+.pricing-table2-1 .plan .btn {
+	margin-bottom: 0;
+}
+
+.pricing-table2-1 .plan .price {
+	margin-bottom: 15px;
+	color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+}
+
+.pricing-table2-1 .plan .price * {
+	font-family: tahoma;
+	line-height: 100%;
+}
+
+.pricing-table2-1 .plan .price .amount {
+	font-size: 120px;
+	font-weight: 900;
+    font-family: 'Roboto Slab', serif;
+}
+
+.pricing-table2-1 .plan .price .currency {
+	position: relative;
+	top: 16px;
+	font-size: 35px;
+	vertical-align: top;
+	margin-right: 5px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.pricing-table2-1 .plan .price .period {
+    clear: left;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.pricing-table2-1 .plan .features {
+	background: #F5F7FA;
+	padding: 25px 35px;
+	border: 1px solid #E6E9ED;
+	border-top: none;
+	border-bottom-width: 1px;
+	margin-top: 0 !important;
+}
+
+.pricing-table2-1 .plan .features li {
+    font-size: 13px;
+	padding: 15px 0;
+ 	border-top: 1px solid #ddd;
+	list-style: none;
+    font-family: 'Roboto Slab', serif;
+}
+
+.pricing-table2-1 .plan .features li:first-child {
+	border: none;
+}
+
+.pricing-table2-1 .plan .features li i {
+	margin-right: 10px;
+}
+
+.pricing-table2-1 .col-4 .plan header {
+	padding: 40px;
+}
+
+.pricing-table2-1 .col-4 .plan h2 {
+	font-size: 18px;
+}
+
+.pricing-table2-1 .col-4 .plan .price .amount {
+	font-size: 90px;
+}
+
+.pricing-table2-1 .col-4 .plan .features {
+	padding: 20px 30px;
+}
+
+
+
+/*	team 3
+/*----------------------------------------------------*/
+.guide{
+    color: #fff;
+    background: url(../images/header8.jpg) fixed  no-repeat center top;  
+}
+
+.guide .section-padding{
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.guide .section-title h2{
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.guide .subtitle{
+    margin: 30px 0 50px 0;
+    line-height: 1.7;
+}
+
+.guide .box {
+    margin-bottom: 15px;
+    padding-top: 20px;
+}
+
+.guide .box img {
+    border-radius: 10px;
+    height: 200px;
+}
+
+.guide .box img,
+.guide .box span {
+	-webkit-transform: scale(0.7);
+	transform: scale(0.7);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.guide .box:hover img,
+.guide .box:hover span {
+    border-radius: 50%;
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.guide .box h3 {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.guide .box strong {
+    font-family: 'Roboto Slab', serif;
+}
+
+.guide .box p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: 0 10px;
+}
+
+.guide .social-icon:hover{
+    color: rgb(5, 216, 178);
+	-webkit-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.guide .social-icon {
+    color: #fff;
+    font-size: 16px !important;
+    padding: 5px;
+    -webkit-transition: background 0.3s ease-in-out 0s;
+    transition: background 0.3s ease-in-out 0s;
+}
+
+
+/* Ribbons */
+.ribbon {
+	position: absolute;
+	top: -4px;
+	right: 11px;
+	width: 82px;
+	height: 82px;
+	overflow: hidden;
+	z-index: 10
+}
+
+.red-hot { background: url("../images/ribbons/red-hot.png") 0 0 no-repeat; }
+.best-value { background: url("../images/ribbons/best-value.png") 0 0 no-repeat; }
+.premium { background: url("../images/ribbons/premium.png") 0 0 no-repeat; }
+.exclusive { background: url("../images/ribbons/exclusive.png") 0 0 no-repeat; }
+.popular { background: url("../images/ribbons/popular.png") 0 0 no-repeat; }
+.five-stars { background: url("../images/ribbons/five-stars.png") 0 0 no-repeat; }

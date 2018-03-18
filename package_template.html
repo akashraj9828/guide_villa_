@@ -11,11 +11,11 @@
 <!-- /.container -->
 
 <script>
-function makePackage(destination,price) {
+function makePackage(destination,price,special) {
 
     //template holds the template for a Package offer
     var template=`<div class="col-md-6 col-sm-6 pricing-table-3">
-            <div class="ribbon popular"></div>
+            <div class="ribbon `+special+`"></div>
             <div class="plan">
 
                 <header style="background: url(./images/destination/`+destination+`.jpg) no-repeat center 0px / cover;">
@@ -64,8 +64,9 @@ function makePackage(destination,price) {
 
 }
 
-        $("#package_holder").append(makePackage("rajasthan",3))
-        $("#package_holder").append(makePackage("kashmir",7))
-        $("#package_holder").append(makePackage("kerela",4))
+        $("#package_holder").append(makePackage("rajasthan",3,"popular"))
+        $("#package_holder").append(makePackage("kashmir",7,"best-value"))
+        $("#package_holder").append(makePackage("kerela",4,"premium"))
+        $("#package_holder").append(makePackage("goa",10,"red-hot"))
 
 </script>
