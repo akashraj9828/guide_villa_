@@ -1,7 +1,6 @@
-<div id="overlay">
 
 
-<div id="reviews_template">
+<div id="reviews_template" style="display:none">
     <span>Ratings and Reviews</span>
 
     <div>
@@ -25,5 +24,4 @@
 
     </div>
 
-</div>
 </div>

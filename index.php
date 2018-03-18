@@ -6,28 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
+    
     <link href="css/bootstrap.css" rel="stylesheet">
-
+    
+    
     <!-- Edit CSS -->
     <link href="css/default.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-
+    <link href="css/mycss.css" rel="stylesheet">
+    
+    
     <!-- Font Awesome -->
     <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/mycss.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,900,700,600,300,200" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!--[if lt IE 9]>
-          <script src="js/html5shiv.js"></script>
-          <script src="js/respond.min.js"></script>
-        <![endif]-->
+    
+
+
 </head>
 
 <body>
-
+    <div id="overlay" class="text-center" onclick="off()"></div>
     <div id="page" class="page">
         <!-- ****** Team Section****** -->
         <section id="team3" class="team3">
@@ -55,11 +56,6 @@
                         <?php
                              include 'guide_template.php';
                              include 'guide_template.php';
-                             include 'guide_template.php';
-                             include 'guide_template.php';
-                             include 'guide_template.php';
-                                
-                             
                         ?>
                         
                     </div>
@@ -77,9 +73,10 @@
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/myjs.js"></script>
+    
 
     <?php
-                include_once 'review_template.php'
+                // include_once 'review_template.php'
     ?>
 
 </body>

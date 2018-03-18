@@ -26,8 +26,8 @@
         </div>
 
         <!-- reviews -->
-        <div id="reviews">
-            <h5>
+        <div>
+            <h5 id="show_reviews">
                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Reviews</h5>
                
         </div>

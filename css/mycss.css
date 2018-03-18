@@ -3,6 +3,7 @@
 }
 
 #overlay {
+    text-align:  center;
     position: fixed;
     display: none;
     width: 100%;
@@ -11,7 +12,46 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    cursor: pointer;
+    background-color: #00000087;
+    z-index: 10;
+    filter:  blur;
+}
+
+#review_title{
+    font-size: 1em;
+    text-align:  left;
+    color: #7ef41ead;
+    margin:  0;
+}
+
+#review_content{
+    color: white;
+    text-transform:  initial;
+    font-style:  italic;
+    margin-bottom: 17;
+    text-align:  left;
+}
+#reviewer_name{
+    text-align:  left;
+    font-size:  initial;
+    color: #00a062c2;
+    margin:  0;
+    margin-left: -23px;
+}
+
+#review_heading{font-size:  large;font-family: sans-serif;color:  white;font-weight:  700;}
+
+#reviews_container{
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+    overflow: visible;
+}
+
+.blur-all {
+    /* -webkit-filter: blur(1px); */
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(5px);
 }
