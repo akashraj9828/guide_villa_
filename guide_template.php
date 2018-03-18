@@ -33,7 +33,7 @@
         </div>
         <!-- package offered -->
         <div>
-            <h5 id="show_package">
+            <h5 id="show_package"  data-toggle="modal" data-target="#myModal">
                 <i class="fa fa-get-pocket" aria-hidden="true"></i> Package Offered</h5>
                
         </div>

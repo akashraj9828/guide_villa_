@@ -1,4 +1,5 @@
 $("#show_reviews").click(function(){
+    $(".modal-body").empty()
 
     $(".modal-title").html("Reviews")
 
@@ -38,36 +39,12 @@ $("#show_reviews").click(function(){
    
 })
 
-// $("#show_package").click(function () {
-//     document.getElementById("overlay").style.display = "block";
-//     $("div#page").addClass("blur")
-   
-//     var package_div = `<div id="packages_container" ></div>`
-//     var package_title = `<div>
-//                         <span id="package_heading">packages</span>
-//                         </div>`
-
-//     var close_btn = `<button type="button" class="btn btn-danger" onclick="off()" >Close</button>`
+$("#show_package").click(function () {
+    $(".modal-body").empty()    
+    $(".modal-title").html("Packages")
+    $(".modal-body").load("package_template.php")
+      
+})
 
 
-   
-//     // $(package_div).append(package_title)
-
-//     $("div#overlay").append(package_div)
-//     $("div#packages_container").load("package_template.php")
-//     // $("div#packages_container").append(package_title)
-//     // $("div#packages_container").append(package_template)
-//     // $("div#packages_container").append(package_template)
-
-//     $("div#packages_container").append(close_btn)
-
-// }
-// )
-
-// function off() {
-//     $("div#page").removeClass("blur")
-    
-//     $("div#overlay").empty()
-//     document.getElementById("overlay").style.display = "none";
-// }
 

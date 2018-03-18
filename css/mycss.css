@@ -58,3 +58,9 @@
 hr.divider {
 	border-top: 3px double #8c8b8b;
 }
+
+@media only screen and (min-width: 992px){
+.pricing-table2-1 .plan header {
+    background: url("http://www.theincredibleholidays.in/wp-content/uploads/2015/05/s3.jpg") no-repeat  center 0px / cover;
+}
+}
