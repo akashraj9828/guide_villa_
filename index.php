@@ -22,6 +22,8 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,900,700,600,300,200" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    
 
 
 
@@ -56,18 +58,15 @@
         <section id="team3" class="team3">
             <div class="section-padding">
                 <div class="container">
+
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
                             <h1>Our Tour Guides</h1>
                             <p>Meet the best tour guides this world has to offer.</p>
                             <h3> Trekking, Camping and Sightseeing</h3>
                         </div>
-                    </div>
-                    <div class="row">
+
                         <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-center">
-                            <div class="section-title wow bounceIn">
-                                <h2>Management Team </h2>
-                            </div>
                             <!-- //title -->
                             <div class="subtitle">
                                 Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor. Lorem ipsum
@@ -75,18 +74,17 @@
                                 ipsum gravida tortor,ulla varius consequat magna.
                             </div>
                             <!-- //subtitle -->
+                            <!-- //column -->
                         </div>
-                        <!-- //column -->
+                        <!-- //row -->
                     </div>
-                    <!-- //row -->
-                    <div class="row margin">
 
-
-                        <?php
-                             include 'guide_template.php';
-                             include 'guide_template.php';
-                        ?>
-
+                    <div class="row margin" id="guide_holder">
+                        <script>
+                        $("#guide_holder").load("guide_template.php")
+                        </script>
+                    
+                       
                     </div>
                     <!-- //row -->
                 </div>
@@ -101,10 +99,11 @@
     <!--=== Load JS here for greater good ====-->
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script> -->
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/regular.js" integrity="sha384-t7yHmUlwFrLxHXNLstawVRBMeSLcXTbQ5hsd0ifzwGtN7ZF7RZ8ppM7Ldinuoiif" crossorigin="anonymous"></script> -->
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script> -->
+    
     <script src="js/myjs.js"></script>
+    <!-- <script>
+          $("#guide_holder").load(content)
+          </script> -->
 
 
     <?php

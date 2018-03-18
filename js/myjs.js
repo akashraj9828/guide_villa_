@@ -1,9 +1,28 @@
-$("#show_reviews").click(function(){
+var content;
+
+$(document).ready(function () {
+
+    // $.get('guide_template.php', function (data) {
+    //     content = data;
+    //     $('#result').prepend(content);
+    // });
+    
+
+  
+    // console.log('$("#guide_holder").append(content)')
+    // $("div#guide_holder").load("guide_template.php")
+    // $("div#guide_holder").load("guide_template.php")
+    // $("div#guide_holder").load("guide_template.php")
+      
+});
+
+
+function showReviews() {
     $(".modal-body").empty()
 
     $(".modal-title").html("Reviews")
 
-    var review_template =`<div>
+    var review_template = `<div>
                                 <div>
                                  <!-- reviewer name -->
                                     <div>
@@ -30,21 +49,16 @@ $("#show_reviews").click(function(){
                             <br>
                             <hr class="divider">
                             <br>`
-        $(".modal-body").append(review_template)
-
+    $(".modal-body").append(review_template)
 
     
+}
 
 
-   
-})
+function showPackages() {
+    $(".modal-body").empty()
 
-$("#show_package").click(function () {
-    $(".modal-body").empty()    
     $(".modal-title").html("Packages")
     $(".modal-body").load("package_template.php")
-      
-})
-
-
+}
 

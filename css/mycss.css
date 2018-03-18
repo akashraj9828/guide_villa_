@@ -61,6 +61,13 @@ hr.divider {
 
 @media only screen and (min-width: 992px){
 .pricing-table2-1 .plan header {
-    background: url("http://www.theincredibleholidays.in/wp-content/uploads/2015/05/s3.jpg") no-repeat  center 0px / cover;
+    background: url("../images/destination/rajasthan.jpg") no-repeat  center 0px / cover;
 }
+}
+
+#guide_name{text-transform:  capitalize;}
+#guide_location{text-transform:  capitalize;}
+
+#guide_about{
+
 }
